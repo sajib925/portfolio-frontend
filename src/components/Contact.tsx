@@ -63,9 +63,7 @@ export const Contact = () => {
       className="flex flex-col gap-6 rounded-[8px] bg-[#27272c] p-10"
     >
       <h3 className="text-4xl text-accent">{"Let's"} work together</h3>
-      <p className="text-white/60">
-        Lorem ipsum dolor sit amet consecteture adipiscing elit, sed do eiusmod
-      </p>
+      <p className="text-white/60">Hello.This is Sajib</p>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <Input
           {...register("firstName")}
