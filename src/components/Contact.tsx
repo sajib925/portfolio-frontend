@@ -27,29 +27,29 @@ export const Contact = () => {
   });
 
   const onSubmit = async (data: ContactDataType) => {
-    try {
-      const response = await axios.post(
-        "https://portfolio-backend-5nv1.onrender.com/api/contact/",
-        {
-          first_name: data.firstName,
-          last_name: data.lastName,
-          email: data.email,
-          subject: data.subject,
-          message: data.message,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        },
-      );
-
-      console.log("Message sent successfully:", response.data);
-      // Optionally, you can display a success message to the user here.
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      // Optionally, display an error message to the user here.
-    }
+    // try {
+    //   const response = await axios.post(
+    //     "https://portfolio-backend-5nv1.onrender.com/api/contact/",
+    //     {
+    //       first_name: data.firstName,
+    //       last_name: data.lastName,
+    //       email: data.email,
+    //       subject: data.subject,
+    //       message: data.message,
+    //     },
+    //     {
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //     },
+    //   );
+    //
+    //   console.log("Message sent successfully:", response.data);
+    //   // Optionally, you can display a success message to the user here.
+    // } catch (error) {
+    //   console.error("Error submitting form:", error);
+    //   // Optionally, display an error message to the user here.
+    // }
   };
 
   return (
