@@ -5,13 +5,14 @@ import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import axios from "axios";
 
 const formSchema = z.object({
   firstName: z.string().min(3),
   lastName: z.string().min(3),
   email: z.string().min(1).email(),
-  phone: z.string().min(1),
-  message: z.string().min(50),
+  subject: z.string().min(1),
+  message: z.string().min(5),
 });
 
 export type ContactDataType = z.infer<typeof formSchema>;
@@ -27,29 +28,23 @@ export const Contact = () => {
 
   const onSubmit = async (data: ContactDataType) => {
     try {
-      const response = await fetch(
-        "https://portfolio-backend-5nv1.onrender.com/api/contact",
+      const response = await axios.post(
+        "https://portfolio-backend-5nv1.onrender.com/api/contact/",
         {
-          method: "POST",
+          first_name: data.firstName,
+          last_name: data.lastName,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            first_name: data.firstName,
-            last_name: data.lastName,
-            email: data.email,
-            phone: data.phone,
-            message: data.message,
-          }),
         },
       );
 
-      if (!response.ok) {
-        throw new Error("Failed to send message");
-      }
-
-      const result = await response.json();
-      console.log("Message sent successfully:", result);
+      console.log("Message sent successfully:", response.data);
       // Optionally, you can display a success message to the user here.
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -76,11 +71,7 @@ export const Contact = () => {
           type="email"
           placeholder="Email address"
         />
-        <Input
-          {...register("phone")}
-          type="number"
-          placeholder="Phone number"
-        />
+        <Input {...register("subject")} type="text" placeholder="Subject" />
       </div>
       <Textarea
         {...register("message")}
