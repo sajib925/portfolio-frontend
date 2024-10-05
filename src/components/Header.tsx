@@ -13,16 +13,18 @@ export const Header: React.FC = () => {
             Sajib<span className="text-accent">.</span>
           </h1>
         </Link>
-        {/*  Desktop nav  */}
-        <div className="hidden items-center gap-8 xl:flex">
+        <div className="hidden lg:block">
           <Nav />
+        </div>
+        {/*  Desktop nav  */}
+        <div className="hidden items-center gap-8 lg:block">
           <Link href={"/contact"}>
             <Button>Hire me</Button>
           </Link>
         </div>
 
         {/*  Mobile nav  */}
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <MobileNav />
         </div>
       </div>
