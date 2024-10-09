@@ -17,7 +17,7 @@ const socials = [
     icon: <FaFacebookF />,
     path: "https://www.facebook.com/profile.php?id=100008890392675",
   },
-  { icon: <FaTelegramPlane />, path: "https://t.me/your_telegram_username" },
+  { icon: <FaTelegramPlane />, path: "https://t.me/@SajibAhmed15" },
 ];
 
 export const Social = ({

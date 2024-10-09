@@ -12,7 +12,7 @@ export const Stats = () => {
       text: "Projects completed",
     },
     {
-      num: 8,
+      num: 15,
       text: "Technologies mastered",
     },
     {

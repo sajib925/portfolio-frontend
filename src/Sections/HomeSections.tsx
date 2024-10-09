@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import { Social } from "@/components/Social";
 import { Stats } from "@/components/Stats";
+import Link from "next/link";
 
 function HomeSections() {
+  const cv = "/MY-CV.jpg";
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -31,14 +33,17 @@ function HomeSections() {
             </p>
             {/*  btn and socials */}
             <div className="flex flex-col items-center gap-8 xl:flex-row">
-              <Button
-                variant={"outline"}
-                size={"lg"}
-                className="flex items-center gap-2 uppercase"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <Link href={cv} download>
+                <Button
+                  variant={"outline"}
+                  size={"lg"}
+                  className="flex items-center gap-2 uppercase"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </Link>
+
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles={"flex gap-6"}
