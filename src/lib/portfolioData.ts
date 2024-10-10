@@ -85,9 +85,9 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dioutvghc/image/upload/v1728190753/client-portal-1_cszyis.png",
     image_3:
       "https://res.cloudinary.com/dioutvghc/image/upload/v1728190788/client-portal-3_vsgya0.png",
-    live_link_frontend: "https://portfolio.com",
+    live_link_frontend: "https://kundeportal.getonnet.no/auth/login",
     live_link_backend: "",
-    github_link_frontend: "https://kundeportal.getonnet.no/auth/login",
+    github_link_frontend: "",
     github_link_backend: "",
   },
   {

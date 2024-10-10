@@ -66,7 +66,7 @@ function WorkSection() {
                         <p className="pb-3 text-2xl font-semibold leading-none text-white">
                           Stack
                         </p>
-                        <ul className="flex gap-4">
+                        <ul className="flex gap-4 max-sm:flex-wrap">
                           {projects[activeIndex]?.tags.map((tag) => (
                             <li key={tag.id} className="text-xl text-accent">
                               {tag.name}
@@ -173,7 +173,7 @@ function WorkSection() {
                                   <h3 className="text-center text-xl font-semibold text-black">
                                     Stack
                                   </h3>
-                                  <p className="flex items-center justify-center gap-3 text-base text-black">
+                                  <p className="flex flex-wrap items-center justify-center gap-3 text-base text-black">
                                     {selectedProject.tags.map((feature) => (
                                       <span
                                         key={feature.id}
