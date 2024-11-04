@@ -4,9 +4,22 @@ import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { CLogo, CPlusPlusLogo, DataStructuresLogo } from "@/lib/icon";
-import { FaJs, FaPython, FaReact } from "react-icons/fa";
-import { SiDjango, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { FaCss3Alt, FaJs, FaPython, FaReact, FaSass } from "react-icons/fa";
+import {
+  SiChakraui,
+  SiDjango,
+  SiHtml5,
+  SiNextdotjs,
+  SiTailwindcss,
+} from "react-icons/si";
 import { TbBrandMysql } from "react-icons/tb";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { FaWebflow } from "react-icons/fa6";
 
 const about = {
   title: "About me",
@@ -88,6 +101,14 @@ const skills = {
       name: "C Language",
     },
     {
+      icon: <SiHtml5 />,
+      name: "HTML5",
+    },
+    {
+      icon: <FaCss3Alt />,
+      name: "CSS3",
+    },
+    {
       icon: <CPlusPlusLogo />,
       name: "C++ Language",
     },
@@ -120,8 +141,20 @@ const skills = {
       name: "Tailwind.css",
     },
     {
+      icon: <SiChakraui />,
+      name: "Chakra UI",
+    },
+    {
+      icon: <FaSass />,
+      name: "Sass",
+    },
+    {
       icon: <TbBrandMysql />,
       name: "My SQL",
+    },
+    {
+      icon: <FaWebflow />,
+      name: "Webflow",
     },
   ],
 };
@@ -220,26 +253,26 @@ function ResumeSection() {
                     {skills.description}
                   </p>
                 </div>
-                {/*<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">*/}
-                {/*  {skills.skillList.map((skill, index) => {*/}
-                {/*    return (*/}
-                {/*      <li key={index}>*/}
-                {/*        <TooltipProvider delayDuration={100}>*/}
-                {/*          <Tooltip>*/}
-                {/*            <TooltipTrigger className="group flex h-[150px] w-full items-center justify-center rounded-[8px] bg-[#232329]">*/}
-                {/*              <div className="text-6xl transition-all duration-300 group-hover:text-accent">*/}
-                {/*                {skill.icon}*/}
-                {/*              </div>*/}
-                {/*            </TooltipTrigger>*/}
-                {/*            <TooltipContent>*/}
-                {/*              <p className="capitalize">{skill.name}</p>*/}
-                {/*            </TooltipContent>*/}
-                {/*          </Tooltip>*/}
-                {/*        </TooltipProvider>*/}
-                {/*      </li>*/}
-                {/*    );*/}
-                {/*  })}*/}
-                {/*</ul>*/}
+                <ul className="grid grid-cols-2 justify-center gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+                  {skills.skillList.map((skill, index) => {
+                    return (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="group flex h-[100px] w-full items-center justify-center rounded-[8px] bg-[#232329]">
+                              <div className="text-6xl transition-all duration-300 group-hover:text-accent">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             </TabsContent>
             {/*about me*/}

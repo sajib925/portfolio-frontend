@@ -10,13 +10,18 @@ import {
 } from "@/components/ui/tooltip";
 import { BsGithub } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import { WorkSliderBtns } from "@/components/WorkSliderBtns";
 import "swiper/css";
 import { GoArrowUpRight } from "react-icons/go";
 import { GrFormView } from "react-icons/gr";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Project, projects } from "@/lib/portfolioData";
+import { IoMdClose } from "react-icons/io";
 
 function WorkSection() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -96,9 +101,12 @@ function WorkSection() {
                               projects[activeIndex]?.id && (
                               <DialogContent
                                 className={
-                                  "h-full w-full max-w-[800px] !overflow-auto"
+                                  "h-[90vh] w-full max-w-[800px] !overflow-auto"
                                 }
                               >
+                                <DialogClose className="ml-auto flex h-10 w-10 items-center justify-center rounded-full border border-accent text-xl text-black transition-all duration-300 hover:bg-accent">
+                                  <IoMdClose />
+                                </DialogClose>
                                 <div className="flex flex-col gap-4">
                                   <h2 className="pb-6 text-center text-4xl font-bold capitalize text-black transition-all duration-500 group-hover:text-accent">
                                     {selectedProject.title}

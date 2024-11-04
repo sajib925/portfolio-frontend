@@ -217,16 +217,17 @@ export const projects: Project[] = [
       },
     ],
     image_1:
-      "https://res.cloudinary.com/dioutvghc/image/upload/v1728485379/Screenshot_2024-10-09_204913_kbrdcs.png",
+      "https://res.cloudinary.com/dioutvghc/image/upload/v1730729301/Screenshot_2024-11-04_200359_i4gow8.png",
     image_2:
       "https://res.cloudinary.com/dioutvghc/image/upload/v1728485442/Screenshot_2024-10-09_205024_p7piww.png",
-    image_3: "image9_url",
-    live_link_frontend: "https://vaccine-management-frontend.vercel.app/",
-    live_link_backend: "https://vaccine-management-backend-j2ii.onrender.com/",
+    image_3:
+      "https://res.cloudinary.com/dioutvghc/image/upload/v1730729294/Screenshot_2024-11-04_200425_iai4vc.png",
+    live_link_frontend: "https://vaccine-management-frontend.vercel.app",
+    live_link_backend: "https://vaccine-management-supebase.vercel.app",
     github_link_frontend:
       "https://github.com/sajib925/vaccine-management-frontend",
     github_link_backend:
-      "https://github.com/sajib925/vaccine-management-backend",
+      "https://github.com/sajib925/vaccine-management-supebase",
   },
   {
     id: 4,
@@ -241,19 +242,19 @@ export const projects: Project[] = [
     github_link_frontend: "",
     github_link_backend: "",
   },
-  {
-    id: 5,
-    title: "Landing Website",
-    description_1:
-      "This is an landing portfolio website that is solely for showcasing. It displays a collection of products and services related to my work and expertise.",
-    tags: [{ id: 12, name: "Webflow" }],
-    image_1:
-      "https://res.cloudinary.com/dioutvghc/image/upload/v1728486325/Screenshot_2024-10-09_210458_kjfj7r.png",
-    live_link_frontend: "https://landing-page-0c97b6.webflow.io/",
-    live_link_backend: "",
-    github_link_frontend: "https://github.com/fitnesstracking-frontend",
-    github_link_backend: "",
-  },
+  // {
+  //   id: 5,
+  //   title: "Landing Website",
+  //   description_1:
+  //     "This is an landing portfolio website that is solely for showcasing. It displays a collection of products and services related to my work and expertise.",
+  //   tags: [{ id: 12, name: "Webflow" }],
+  //   image_1:
+  //     "https://res.cloudinary.com/dioutvghc/image/upload/v1728486325/Screenshot_2024-10-09_210458_kjfj7r.png",
+  //   live_link_frontend: "https://landing-page-0c97b6.webflow.io/",
+  //   live_link_backend: "",
+  //   github_link_frontend: "https://github.com/fitnesstracking-frontend",
+  //   github_link_backend: "",
+  // },
   {
     id: 6,
     title: "Portfolio Website",
@@ -265,8 +266,10 @@ export const projects: Project[] = [
       { id: 17, name: "Lenis" },
     ],
     image_1:
-      "https://res.cloudinary.com/dioutvghc/image/upload/v1728486591/Screenshot_2024-10-09_210934_exrrlm.png",
-    live_link_frontend: "https://webflows-trendy-site-73d680.webflow.io/",
+      "https://res.cloudinary.com/dioutvghc/image/upload/v1730729286/Screenshot_2024-11-04_200610_kjnpb6.png",
+    image_2:
+      "https://res.cloudinary.com/dioutvghc/image/upload/v1730729278/Screenshot_2024-11-04_200632_xhte0c.png",
+    live_link_frontend: "https://sajib-dev.webflow.io",
     live_link_backend: "",
     github_link_frontend: "https://webflows-trendy-site-73d680.webflow.io/",
     github_link_backend: "",
