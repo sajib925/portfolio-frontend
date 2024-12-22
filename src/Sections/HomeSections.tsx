@@ -7,7 +7,7 @@ import { Stats } from "@/components/Stats";
 import Link from "next/link";
 
 function HomeSections() {
-  const cv = "/MY-CV.jpg";
+  const cv = "assets/CV.pdf";
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">

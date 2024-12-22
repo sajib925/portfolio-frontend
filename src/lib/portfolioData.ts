@@ -159,76 +159,76 @@ export const projects: Project[] = [
       "https://github.com/sajib925/bank-management-frontend",
     github_link_backend: "https://github.com/sajib925/bank-management-backend",
   },
-  {
-    id: 3,
-    title: "Vaccination Management System with Role-Based User Features",
-    description_1:
-      "This vaccination management website offers authentication and profile updates. Doctors can create campaigns and add vaccines, while patients can book vaccinations and leave reviews. Built with Next.js, TypeScript, Tailwind, and Django REST.",
-    description_2:
-      "Role-based user system for doctors and patients. Doctors manage vaccine campaigns, while patients book appointments and leave reviews. The platform combines Next.js frontend with Django REST backend for seamless performance and user experience.",
-    description_3:
-      "Featuring a role-based vaccination system, patients can book appointments and leave reviews, while doctors manage vaccination campaigns. Built with modern web technologies, it ensures a smooth user journey from booking to vaccination.",
-    tags: [
-      { id: 7, name: "Next Js" },
-      { id: 8, name: "Typescript" },
-      { id: 9, name: "Tailwind" },
-      { id: 10, name: "Django Rest Framework" },
-    ],
-    features: [
-      {
-        id: 21,
-        name: "Secure login and profile management for doctors and patients.",
-      },
-      {
-        id: 22,
-        name: "Doctors can add new vaccine campaigns and manage their schedules.",
-      },
-      {
-        id: 23,
-        name: "Patients can book vaccination appointments through an intuitive interface.",
-      },
-      {
-        id: 24,
-        name: " Doctors create, update, and manage vaccination campaigns with ease.",
-      },
-      {
-        id: 25,
-        name: " Doctors can add available vaccines to ongoing campaigns.",
-      },
-      {
-        id: 26,
-        name: "Patients can select and book appointments for their chosen vaccine.",
-      },
-      {
-        id: 27,
-        name: "Patients can leave reviews for vaccination campaigns after booking.",
-      },
-      {
-        id: 28,
-        name: "Users can update their personal details and view appointment history.",
-      },
-      {
-        id: 29,
-        name: "A responsive, user-friendly interface powered by Next.js and Tailwind.",
-      },
-      {
-        id: 30,
-        name: "A robust backend with Django REST Framework for smooth data handling.",
-      },
-    ],
-    image_1:
-      "https://res.cloudinary.com/dioutvghc/image/upload/v1730729301/Screenshot_2024-11-04_200359_i4gow8.png",
-    image_2:
-      "https://res.cloudinary.com/dioutvghc/image/upload/v1728485442/Screenshot_2024-10-09_205024_p7piww.png",
-    image_3:
-      "https://res.cloudinary.com/dioutvghc/image/upload/v1730729294/Screenshot_2024-11-04_200425_iai4vc.png",
-    live_link_frontend: "https://vaccine-management-frontend.vercel.app",
-    live_link_backend: "https://vaccine-management-supebase.vercel.app",
-    github_link_frontend:
-      "https://github.com/sajib925/vaccine-management-frontend",
-    github_link_backend:
-      "https://github.com/sajib925/vaccine-management-supebase",
-  },
+  // {
+  //   id: 3,
+  //   title: "Vaccination Management System with Role-Based User Features",
+  //   description_1:
+  //     "This vaccination management website offers authentication and profile updates. Doctors can create campaigns and add vaccines, while patients can book vaccinations and leave reviews. Built with Next.js, TypeScript, Tailwind, and Django REST.",
+  //   description_2:
+  //     "Role-based user system for doctors and patients. Doctors manage vaccine campaigns, while patients book appointments and leave reviews. The platform combines Next.js frontend with Django REST backend for seamless performance and user experience.",
+  //   description_3:
+  //     "Featuring a role-based vaccination system, patients can book appointments and leave reviews, while doctors manage vaccination campaigns. Built with modern web technologies, it ensures a smooth user journey from booking to vaccination.",
+  //   tags: [
+  //     { id: 7, name: "Next Js" },
+  //     { id: 8, name: "Typescript" },
+  //     { id: 9, name: "Tailwind" },
+  //     { id: 10, name: "Django Rest Framework" },
+  //   ],
+  //   features: [
+  //     {
+  //       id: 21,
+  //       name: "Secure login and profile management for doctors and patients.",
+  //     },
+  //     {
+  //       id: 22,
+  //       name: "Doctors can add new vaccine campaigns and manage their schedules.",
+  //     },
+  //     {
+  //       id: 23,
+  //       name: "Patients can book vaccination appointments through an intuitive interface.",
+  //     },
+  //     {
+  //       id: 24,
+  //       name: " Doctors create, update, and manage vaccination campaigns with ease.",
+  //     },
+  //     {
+  //       id: 25,
+  //       name: " Doctors can add available vaccines to ongoing campaigns.",
+  //     },
+  //     {
+  //       id: 26,
+  //       name: "Patients can select and book appointments for their chosen vaccine.",
+  //     },
+  //     {
+  //       id: 27,
+  //       name: "Patients can leave reviews for vaccination campaigns after booking.",
+  //     },
+  //     {
+  //       id: 28,
+  //       name: "Users can update their personal details and view appointment history.",
+  //     },
+  //     {
+  //       id: 29,
+  //       name: "A responsive, user-friendly interface powered by Next.js and Tailwind.",
+  //     },
+  //     {
+  //       id: 30,
+  //       name: "A robust backend with Django REST Framework for smooth data handling.",
+  //     },
+  //   ],
+  //   image_1:
+  //     "https://res.cloudinary.com/dioutvghc/image/upload/v1730729301/Screenshot_2024-11-04_200359_i4gow8.png",
+  //   image_2:
+  //     "https://res.cloudinary.com/dioutvghc/image/upload/v1728485442/Screenshot_2024-10-09_205024_p7piww.png",
+  //   image_3:
+  //     "https://res.cloudinary.com/dioutvghc/image/upload/v1730729294/Screenshot_2024-11-04_200425_iai4vc.png",
+  //   live_link_frontend: "https://vaccine-management-frontend.vercel.app",
+  //   live_link_backend: "https://vaccine-management-supebase.vercel.app",
+  //   github_link_frontend:
+  //     "https://github.com/sajib925/vaccine-management-frontend",
+  //   github_link_backend:
+  //     "https://github.com/sajib925/vaccine-management-supebase",
+  // },
   {
     id: 4,
     title: "Landing Website",
